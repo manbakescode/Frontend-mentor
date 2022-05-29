@@ -1,0 +1,150 @@
+/***** Colors *****/
+:root {
+    /*Primary*/
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*Neutral*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+}
+
+/**** Selectors *****/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+}
+
+p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+   color: var(--very-light-gray);
+   font-family: 'Big Shoulders Display', cursive;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none;
+
+}
+
+
+/***** Classes ******/
+
+.page-wrapper {
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 60vw;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.card p {
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.card img {
+    margin-top: 50px
+}
+
+.card button {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+}
+
+
+/***** Id selectors *****/
+
+#sedan {
+    background-color: var(--bright-orange);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#sedan button {
+    color: var(--bright-orange);
+}
+
+#suv {
+    background-color: var(--dark-cyan);
+}
+
+#suv button {
+    color: var(--dark-cyan);
+}
+
+#luxury {
+    background-color: var(--very-dark-cyan);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#luxury button {
+    color: var(--very-dark-cyan);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** ATTRIBUTIONS ******/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

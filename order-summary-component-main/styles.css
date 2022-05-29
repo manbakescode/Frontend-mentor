@@ -1,0 +1,155 @@
+/*********Attribution**********/
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/******Color Variables********/
+:root {
+  /*Primary colors*/
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/*Neutral colors*/
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+
+/*Base Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 1rem = 16px , this resizes it to 10px for easier calculations*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.card-content {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.pricing {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.plan-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.plan-price {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--desaturated-blue);
+}
+
+.plan-link {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+/*i dont know why it wasnt recognising the font family from parent???*/
+.payment-button {
+    margin-bottom: 40px;
+    border: none;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: var(--bright-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    box-shadow: -2px 15px 15px hsl(224, 100%, 92%);
+}
+
+.cancel-button {
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+}
+
